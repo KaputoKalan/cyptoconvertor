@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CurrencyConverter from './components/CurrencyConverter'
+import NewsFeed from './components/NewsFeed'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+    return (
+        <div className=' text-white h-screen p-10 md:p-0 flex flex-col md:flex-row justify-around items-center mt-48 md:mt-0'>
+            
+            <CurrencyConverter className='mr-4' />
+            <NewsFeed />
+            
+        </div>
+    )
 }
 
-export default App;
+export default App
